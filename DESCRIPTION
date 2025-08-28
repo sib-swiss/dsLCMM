@@ -1,0 +1,17 @@
+Package: dsLCMM
+Type: Package
+Title:  dsLCMM
+Version: 0.1 
+Date: 2025-08-28
+Authors@R: person("Iulian", "Dragan", email = "iulian.dragan@sib.swiss", role = c("aut", "cre"))
+Description:  Datashield implementation of selected functions from lcmmm. Server package.
+License:  GPLv3
+AssignMethods:
+    
+AggregateMethods:
+    hlmeDS,
+   lcmmDS,
+   multlcmmDS,
+   jlcmmDS,
+   mpjlcmmDS
+Depends: lcmm
