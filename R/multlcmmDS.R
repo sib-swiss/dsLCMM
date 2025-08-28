@@ -17,6 +17,6 @@ multlcmmDS <- function(...){
   }, argNames, argList)  
   
   
-  val <- do.call(lcmmm::multlcmm, argList, envir = myEnv)
+  val <- do.call(lcmm::multlcmm, argList, envir = myEnv)
   return(val)
  }

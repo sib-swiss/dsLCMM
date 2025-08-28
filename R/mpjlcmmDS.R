@@ -17,6 +17,6 @@ mpjlcmmDS <- function(...){
   }, argNames, argList)  
   
   
-  val <- do.call(lcmmm::mpjlcmm, argList, envir = myEnv)
+  val <- do.call(lcmm::mpjlcmm, argList, envir = myEnv)
   return(val)
  }
