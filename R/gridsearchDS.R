@@ -16,9 +16,10 @@ gridsearchDS <- function(...){
     return(retval)
   }, argNames, argList)  
   
-  
-  val <- do.call(lcmm::gridsearch, argList, envir = myEnv)
+  library(lcmm)
+  val <- do.call(gridsearch, argList, envir = myEnv)
   val$call <- NULL
   val$pred$resid_m <- val$pred$resid_ss <- NA
+  val$data <- NULL
   return(val)
  }

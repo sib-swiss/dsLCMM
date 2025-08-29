@@ -26,5 +26,6 @@ hlmeDS <- function(newObj = NULL, ...){
   # mask the disclosing values:
   val$call <- NULL
   val$pred$resid_m <- val$pred$resid_ss <- NA
+  val$data <- NULL
   return(val)
  }
