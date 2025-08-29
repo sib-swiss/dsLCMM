@@ -8,8 +8,5 @@ Description:  Datashield implementation of selected functions from lcmmm. Server
 License:  GPLv3
 AggregateMethods:
     hlmeDS,
-   lcmmDS,
-   multlcmmDS,
-   jlcmmDS,
-   mpjlcmmDS
+    gridsearchDS
 Depends: lcmm

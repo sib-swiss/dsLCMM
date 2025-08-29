@@ -1,4 +1,4 @@
-jlcmmDS <- function(...){
+gridsearchDS <- function(...){
   argList <- list(...)  
   myEnv <- parent.frame()
   argNames <- names(argList)
@@ -9,14 +9,16 @@ jlcmmDS <- function(...){
   argList <- Map(function(name, value){
     retval <- .decode.arg(value)
     
-    if(name %in% c('data')){
+    if(name %in% c('minit')){
       retval <- .deep.extract(retval, startEnv =  myEnv)
     }
-    
+
     return(retval)
   }, argNames, argList)  
   
   
-  val <- do.call(lcmm::jlcmm, argList, envir = myEnv)
+  val <- do.call(lcmm::gridsearch, argList, envir = myEnv)
+  val$call <- NULL
+  val$pred$resid_m <- val$pred$resid_ss <- NA
   return(val)
  }

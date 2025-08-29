@@ -1,1 +1,1 @@
-export("hlmeDS", "jlcmmDS", "lcmmDS", "mpjlcmmDS", "multlcmmDS")
+export("hlmeDS", "gridsearchDS")
